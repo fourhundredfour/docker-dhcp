@@ -5,7 +5,7 @@ A fully operable (ISC-) DHCP-Server running on Alpine-Linux.
 
 * [Requirements](#requirements)
 * [Installation](#installation)
-
+* [Useful links](#useful-links)
 ## Requirements
 
 * Network Interface
@@ -19,3 +19,7 @@ A fully operable (ISC-) DHCP-Server running on Alpine-Linux.
 `$ docker run --restart=always -d --net=host docker-dhcp`
 3. (optional) If you want to use your own configuration, then use a volume.
 `$ docker run -v $PWD/files/dhcpd.conf:/etc/dhcp/dhcpd.conf --restart=always -d --net=host docker-dhcp`
+
+## Useful links
+
+* [https://linux.die.net/man/8/dhcpd](https://linux.die.net/man/8/dhcpd)
